@@ -25,8 +25,8 @@ for (pkg in required_packages) {
 }
 
 # Define paths
-input_path <- "C:/Users/wb593225/OneDrive - WBG/Desktop/Shared/FY2025/Technology and Inequality project/Raw data/GLD harmonization"
-output_path <- "C:/Users/wb593225/OneDrive - WBG/Desktop/Shared/FY2026/04_Brief/Output/01_GLD"
+input_path <- #"C:/Users/.../Raw data/GLD harmonization"
+output_path <- #"C:/Users/.../Output/01_GLD"
 output_file <- file.path(output_path, "01_replication_job_creation_may_2025.xlsx")
 
 # Create output directory

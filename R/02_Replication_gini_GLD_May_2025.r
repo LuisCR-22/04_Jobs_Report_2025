@@ -2,7 +2,7 @@
 # Gini Coefficient Calculation - Replication for Brief (May 2025)
 # Author: Luis Castellanos
 # Date: 2025-03-04
-# 
+# Last modification: 2025-12-16
 # Purpose: Calculate weighted and unweighted Gini coefficients for wage inequality
 #          for selected countries, comparing circa 2016 vs circa 2022
 #########################################
@@ -21,9 +21,9 @@ for (pkg in required_packages) {
 }
 
 # Define paths
-input_path <- "C:/Users/wb593225/OneDrive - WBG/Desktop/Shared/FY2025/Technology and Inequality project/Raw data/GLD harmonization"
-output_path <- "C:/Users/wb593225/OneDrive - WBG/Desktop/Shared/FY2026/04_Brief/Output/01_GLD"
-ppp_path <- "C:/Users/wb593225/OneDrive - WBG/Desktop/Shared/FY2025/Technology and Inequality project/Input/Dta/PPP_17_Database_PIP.dta"
+input_path <- #"C:/Users/.../Raw data/GLD harmonization"
+output_path <- #"C:/Users/.../Output/01_GLD"
+ppp_path <- #"C:/Users/.../Input/Dta/PPP_17_Database_PIP.dta"
 
 # Create output directory if it doesn't exist
 dir.create(output_path, recursive = TRUE, showWarnings = FALSE)
