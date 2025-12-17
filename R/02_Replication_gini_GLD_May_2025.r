@@ -1,7 +1,9 @@
 #########################################
 # Gini Coefficient Calculation - Replication for Brief (May 2025)
-# Author: Luis Castellanos
-# Date: 2025-03-04
+# Author: Luis Castellanos - lcastellanosrodr@worldbank.org
+# Project: Regional Jobs Update - LAC
+# Stats Team - Poverty and Equity Global Practice
+# Date created: 2025-03-15
 # Last modification: 2025-12-16
 # Purpose: Calculate weighted and unweighted Gini coefficients for wage inequality
 #          for selected countries, comparing circa 2016 vs circa 2022
