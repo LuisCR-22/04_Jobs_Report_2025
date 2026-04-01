@@ -1,6 +1,5 @@
-#########################################
-# Employment Growth Analysis - Selected Countries
-# Author: Luis Castellanos - lcastellanosrodr@worldbank.org
+######################################### Employment Growth Analysis - Selected Countries
+# Author: Luis Castellanos - Stats Team (lcasterodr@worldbank.org)
 # Project: Regional Jobs Update - LAC
 # Stats Team - Poverty and Equity Global Practice
 # Date created: 2025-03-15
@@ -9,11 +8,22 @@
 #          - 15+ years
 #          - 15-64 years  
 #          - All ages (including child labor)
-#########################################
-
-# Clean workspace
+######################################### Clean workspace
 rm(list = ls())
 gc()
+# 
+# use of the nocohh option. For MEX, using the nocohh datasets is critical 
+
+# ==============================================================================
+# DATALIBWEB & NOCOHH NOTICE
+# ==============================================================================
+# NOTE: please retrieve data directly from datalibweb 
+# 
+# IMPORTANT: The results, might change due to updates in the LABLAC datasets and the 
+# use of the nocohh option. For MEX, using the nocohh datasets is critical 
+# so that the labor statistics results are consistent with those reported by the ILO.
+# ==============================================================================
+# -----------------------------------------------------------------------------
 
 # Load required libraries
 required_packages <- c("haven", "dplyr", "data.table", "openxlsx")

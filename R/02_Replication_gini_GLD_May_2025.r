@@ -1,17 +1,27 @@
-#########################################
-# Gini Coefficient Calculation - Replication for Brief (May 2025)
-# Author: Luis Castellanos - lcastellanosrodr@worldbank.org
+######################################### Gini Coefficient Calculation - Replication for Brief (May 2025)
+# Author: Luis Castellanos - Stats Team (lcasterodr@worldbank.org)
 # Project: Regional Jobs Update - LAC
 # Stats Team - Poverty and Equity Global Practice
 # Date created: 2025-03-15
 # Last modification: 2025-12-16
 # Purpose: Calculate weighted and unweighted Gini coefficients for wage inequality
 #          for selected countries, comparing circa 2016 vs circa 2022
-#########################################
-
-# Setup
+######################################### Setup
 rm(list = ls())
 gc()
+# 
+# use of the nocohh option. For MEX, using the nocohh datasets is critical 
+
+# ==============================================================================
+# DATALIBWEB & NOCOHH NOTICE
+# ==============================================================================
+# NOTE: please retrieve data directly from datalibweb 
+# 
+# IMPORTANT: The results, might change due to updates in the LABLAC datasets and the 
+# use of the nocohh option. For MEX, using the nocohh datasets is critical 
+# so that the labor statistics results are consistent with those reported by the ILO.
+# ==============================================================================
+# -----------------------------------------------------------------------------
 
 # Load required libraries
 required_packages <- c("haven", "writexl", "dplyr", "ineq", "data.table", "matrixStats", "WDI")
@@ -35,10 +45,8 @@ countries_to_process <- c("ARM", "BGD", "ETH", "GEO", "GMB", "IDN", "IND", "LKA"
                           "MNG", "PAK", "PHL", "RWA", "THA", "TUN", "TUR", "TZA", 
                           "ZAF", "ZMB")
 
-#########################################
-# Gini calculation functions
-#########################################
-
+######################################### Gini calculation functions
+########################################
 weighted_gini <- function(values, weights) {
   valid <- !is.na(values) & !is.na(weights) & values > 0
   if (sum(valid) > 1) {
@@ -66,10 +74,8 @@ unweighted_gini <- function(values) {
   }
 }
 
-#########################################
-# Load CPI and PPP data
-#########################################
-
+######################################### Load CPI and PPP data
+########################################
 message("Loading CPI and PPP data...")
 
 # Load CPI data with error handling
@@ -139,10 +145,8 @@ tryCatch({
 
 message("Data loaded successfully.\n")
 
-#########################################
-# Process countries and calculate Gini
-#########################################
-
+######################################### Process countries and calculate Gini
+########################################
 country_gini_results <- data.frame()
 start_time <- Sys.time()
 
@@ -309,10 +313,8 @@ for (i in seq_along(countries_to_process)) {
   })
 }
 
-#########################################
-# Save results
-#########################################
-
+######################################### Save results
+########################################
 if (nrow(country_gini_results) > 0) {
   output_file <- file.path(output_path, "02_replication_gini_may_2025.xlsx")
   write_xlsx(country_gini_results, path = output_file)
