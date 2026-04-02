@@ -1,6 +1,6 @@
 # Employment Analysis by Demographic Groups
 # This script processes quarterly labor market data from 9 Latin American countries to analyze employment rates and mean labor incomes across demographic groups (gender, age, skill level), comparing data from 2016, 2019, 2023, and 2024.
-# Author: Luis Castellanos
+# Author: Luis Castellanos - Stats Team (lcastellanosrodr@worldbank.org)
 # Last modification: 2025/05/06
 # -----------------------------------------------------------------------------
 

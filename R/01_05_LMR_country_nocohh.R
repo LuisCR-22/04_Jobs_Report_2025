@@ -1,6 +1,6 @@
 # Multi-Country Labor Market Rates Analysis (All Periods)
 # This script generates a comprehensive labor market analysis for Latin American countries by processing household survey data to calculate employment rates, labor force participation, unemployment, NEET rates, and income distributions across multiple time periods, creating standardized cross-country comparisons for regional analysis.
-# Author - Luis Castellanos - Stats Team
+# Author: Luis Castellanos - Stats Team (lcastellanosrodr@worldbank.org)
 # Date: 2025-05-05
 # -----------------------------------------------------------------------------
 

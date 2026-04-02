@@ -1,6 +1,6 @@
 # Multi-Country Labor Market Aggregate Analysis - With Imputation
 # This script generates weighted regional labor market aggregates for Latin American country groups by imputing missing values in country-level indicators, calculating population-weighted averages for employment metrics and worker-weighted averages for income metrics, producing time series analysis with special handling for data limitations such as NEET calculations requiring different country compositions.
-# Author: Luis Castellanos
+# Author: Luis Castellanos - Stats Team (lcastellanosrodr@worldbank.org)
 # Last modification: 2025/05/06
 # -----------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ for(pkg in required_pkgs) {
 }
 
 # Define output directory path
-output_dir <- "<<DATALIBWEB_PATH_OR_GENERIC_URL>>"
+output_dir <- ""
 
 # Define input file
 input_file <- file.path(output_dir, "2025-04-02-LMR-country-nocohh-V4.xlsx")
