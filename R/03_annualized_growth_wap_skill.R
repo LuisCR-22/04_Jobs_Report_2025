@@ -6,11 +6,13 @@
 # ==============================================================================
 # DATALIBWEB & NOCOHH NOTICE
 # ==============================================================================
-# NOTE: please retrieve data directly from datalibweb 
-# 
-# IMPORTANT: The results, might change due to updates in the LABLAC datasets and the 
-# use of the nocohh option. For MEX, using the nocohh datasets is critical 
-# so that the labor statistics results are consistent with those reported by the ILO.
+# NOTE: Uers should retrieve data directly from datalibweb:
+#
+# IMPORTANT: Results, might change due to:
+#   1. Updates in the LABLAC datasets
+#   2. The use of the nocohh option
+# For MEX, using nocohh is critical so that labor statistics are consistent
+# with those reported by the ILO.
 # ==============================================================================
 # -----------------------------------------------------------------------------
 

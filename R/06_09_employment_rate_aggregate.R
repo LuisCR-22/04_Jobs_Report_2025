@@ -8,11 +8,9 @@
 # ==============================================================================
 # DATALIBWEB & NOCOHH NOTICE
 # ==============================================================================
-# NOTE: The LABLAC datasets used in this script were originally loaded from a
-# local folder. Other users should retrieve data directly from datalibweb:
-#   datalibweb, country() year() type(LABLAC) ...
+# NOTE: Uers should retrieve data directly from datalibweb:
 #
-# IMPORTANT: Results, especially for MEX, might change due to:
+# IMPORTANT: Results, might change due to:
 #   1. Updates in the LABLAC datasets
 #   2. The use of the nocohh option
 # For MEX, using nocohh is critical so that labor statistics are consistent
